@@ -3,6 +3,13 @@ const fs = require('fs')
 const jsdom = require('jsdom')
 const path = require('path')
 
+function basicTeenager(age){
+  if (age>=13 || age<=19){
+    return "You are a teenager!";
+  }
+  return "Yar are not a teenager";
+}
+
 describe('flow-control', () => {
 
   before(done => {
